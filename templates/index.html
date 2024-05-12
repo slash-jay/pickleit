@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Machine Learning App</title>
+</head>
+<body>
+    <h1>Flask Machine Learning App</h1>
+    <p>Select a machine learning model:</p>
+    <form action="/train" method="post">
+        <label for="model">Model:</label>
+        <select name="model" id="model">
+            <option value="svm">Support Vector Machine (SVM)</option>
+            <!-- Add options for other models here -->
+        </select>
+        <br><br>
+        <input type="submit" value="Train Model">
+    </form>
+</body>
+</html>

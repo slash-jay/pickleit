@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Machine Learning App - Result</title>
+</head>
+<body>
+    <h1>Model Training Result</h1>
+    <p>Accuracy: {{ accuracy }}</p>
+    <img src="data:image/png;base64,{{ cm_plot }}" alt="Confusion Matrix">
+    <a href="/download_model">Download Trained Model</a>
+</body>
+</html>
