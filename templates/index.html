@@ -3,18 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Machine Learning App</title>
+    <title>Upload Custom Dataset</title>
 </head>
 <body>
-    <h1>Flask Machine Learning App</h1>
-    <p>Select a machine learning model:</p>
-    <form action="/train" method="post">
-        <label for="model">Model:</label>
-        <select name="model" id="model">
-            <option value="svm">Support Vector Machine (SVM)</option>
-            <!-- Add options for other models here -->
-        </select>
-        <br><br>
+    <h1>Upload Custom Dataset</h1>
+    <form action="/train" method="post" enctype="multipart/form-data">
+        <input type="file" name="dataset" accept=".csv">
+        <label for="target_col">Enter the target variable name:</label>
+        <input type="text" id="target_col" name="target_col" required>
         <input type="submit" value="Train Model">
     </form>
 </body>
